@@ -9,3 +9,5 @@ yarn nx list @nrwl/react
 
 yarn nx g @nrwl/react:application --help
 yarn nx g @nrwl/react:application store
+
+yarn nx run store:serve --port 3001
