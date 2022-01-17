@@ -11,3 +11,5 @@ yarn nx g @nrwl/react:application --help
 yarn nx g @nrwl/react:application store
 
 yarn nx run store:serve --port 3001
+
+yarn add @material-ui/core
