@@ -15,7 +15,8 @@
     "skipDefaultLibCheck": true,
     "baseUrl": ".",
     "paths": {
-      "@ns/store/ui-shared": ["libs/store/ui-shared/src/index.ts"]
+      "@ns/store/ui-shared": ["libs/store/ui-shared/src/index.ts"],
+      "@ns/store/util-formatters": ["libs/store/util-formatters/src/index.ts"]
     }
   },
   "exclude": ["node_modules", "tmp"]

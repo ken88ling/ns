@@ -17,5 +17,6 @@ yarn add @material-ui/core
 yarn nx g @nrwl/react:app --help
 
 yarn nx g @nrwl/react:lib ui-shared --directory=store
-
 yarn nx g @nrwl/react:component header --project=store-ui-shared
+
+yarn nx g @nrwl/workspace:lib util-formatters --directory=store

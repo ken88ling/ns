@@ -8,6 +8,7 @@ import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
 import { Header } from '@ns/store/ui-shared';
+import { formatRating } from '@ns/store/util-formatters';
 
 const color = 'white';
 
@@ -89,7 +90,7 @@ export function App() {
                       component="p"
                       className="game-rating"
                     >
-                      <strong>Rating:</strong> {x.rating}
+                      <strong>Rating:</strong> {formatRating(x.rating)}
                     </Typography>
                   </CardContent>
                 </CardActionArea>
