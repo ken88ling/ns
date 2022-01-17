@@ -1,5 +1,4 @@
 import styled from '@emotion/styled';
-import { Route, Link } from 'react-router-dom';
 import { Global, css } from '@emotion/react';
 
 import { getAllGames } from '../fake-api';
@@ -8,12 +7,17 @@ import CardActionArea from '@material-ui/core/CardActionArea';
 import CardContent from '@material-ui/core/CardContent';
 import CardMedia from '@material-ui/core/CardMedia';
 import Typography from '@material-ui/core/Typography';
+import { Header } from '@ns/store/ui-shared';
 
 const color = 'white';
 
 const StyledApp = styled.div``;
 
 const styles = css`
+  body {
+    padding: 0;
+    margin: 0;
+  }
   .games-layout {
     display: flex;
     justify-content: space-between;
@@ -56,6 +60,7 @@ export function App() {
   return (
     <>
       <Global styles={styles} />
+      <Header />
       <div>
         <div className="container">
           <div className="games-layout">
