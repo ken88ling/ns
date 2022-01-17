@@ -14,12 +14,41 @@ const color = 'white';
 const StyledApp = styled.div``;
 
 const styles = css`
-  .container {
-    //background-color: blue;
-  }
-  .game-card {
+  .games-layout {
     display: flex;
-    border: 1px solid red;
+    justify-content: space-between;
+    margin-bottom: 20px;
+  }
+
+  .container {
+    max-width: 800px;
+    margin: 50px auto;
+  }
+
+  .game-card {
+    max-width: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    .game-rating {
+      padding-top: 10px;
+    }
+  }
+
+  .center-content {
+    display: flex;
+    justify-content: center;
+  }
+
+  .game-details {
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+  }
+
+  .game-card-media {
+    height: 140px;
   }
 `;
 
